@@ -1,0 +1,2369 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@font-face {
+  font-family: "Panchang-Bold";
+  src: url("../assets/fonts/Panchang-Bold.otf");
+}
+@font-face {
+  font-family: "Panchang-Regular";
+  src: url("../assets/fonts/Panchang-Regular.otf");
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #090909;
+  color: #fff;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: rgb(19, 69, 102) !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .nav-link {
+  color: #9f9f9f;
+}
+.modal {
+  color: black;
+}
+.row {
+  width: 100% !important;
+}
+/* Mobile */
+@media screen and (max-width: 992px) {
+  .navbar {
+    padding-top: 34px;
+    padding-bottom: 34px;
+
+    padding-left: 0;
+    padding-right: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .navbar .navbar-brand {
+    font-family: "Panchang-Bold";
+    font-size: 24px;
+  }
+
+  .navbar .navbar-brand span {
+    color: #0698fb;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    padding-right: 75px;
+    font-family: "Panchang-Regular";
+  }
+  .navbar .navbar-nav .nav-item .nav-link .translation {
+    width: 24px;
+    height: 24px;
+  }
+  /* Banner */
+  #banner {
+    margin-top: 124px;
+  }
+  #banner .text-banner {
+    margin-top: 200px;
+  }
+  #banner .subtitle {
+    margin-left: 32px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  #banner .title {
+    margin-top: 30px;
+    font-size: 24px;
+    margin-left: 32px;
+    margin-right: 32px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+  }
+  #banner .title,
+  #banner .title span {
+    line-height: 80px;
+
+    letter-spacing: 0.05em;
+  }
+  #banner .title span {
+    color: #0698fb;
+  }
+  #banner .subtitle span {
+    color: #0698fb;
+  }
+  #banner .description {
+    font-size: 18px;
+    color: #9f9f9f;
+    margin-top: 30px;
+    line-height: 40px;
+    margin-left: 32px;
+    text-align: justify;
+    margin-right: 32px;
+    letter-spacing: 0.03em;
+  }
+  #banner .button {
+    margin-top: 70px;
+    margin-left: 32px;
+    padding-left: 4px;
+    padding-right: 4px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #banner .button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240) 0%,
+      rgba(7, 140, 240) 51.67%,
+      rgba(7, 140, 240) 100%
+    );
+  }
+  .play-button {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+
+    background: rgba(7, 140, 240, 0.25);
+  }
+  .play-button:hover {
+    background: rgba(7, 140, 240, 0.15);
+  }
+  .play-button .play-image {
+    width: 50px;
+    height: 50px;
+  }
+  .video {
+    margin-top: 88px;
+    margin-left: 50px;
+  }
+  .play-video-text {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: "Panchang-Bold";
+    font-size: 14px;
+  }
+  .banner-img {
+    margin-top: 131px;
+    height: 529px;
+    margin-left: 32px;
+  }
+
+  #medis {
+    margin-top: 200px;
+  }
+  #medis .md-image {
+    width: calc(100% - 65px);
+
+    margin-left: 32px;
+  }
+  #medis .md-subtitle {
+    margin-top: 30px;
+
+    color: #078cf0;
+    margin-left: 32px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #medis .md-title {
+    font-size: 24px;
+    margin-left: 32px;
+
+    margin-right: 32px;
+    margin-top: 30px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    font-family: "Panchang-Bold";
+  }
+  #medis .md-description {
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  #medis .md-button {
+    margin-top: 70px;
+    margin-left: 32px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #medis .md-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+  #vr-edukasi {
+    margin-top: 200px;
+  }
+
+  #vr-edukasi .vr-edukasi-subtitle {
+    margin-top: 30px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    margin-left: 32px;
+    color: #078cf0;
+  }
+  .vr-edukasi-title {
+    margin-left: 32px;
+    font-family: "Panchang-Bold";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #ffffff;
+  }
+  .vr-edukasi-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    margin-left: 32px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+  }
+  #vr-edukasi .top-image1 {
+    width: calc(100% - 65px);
+
+    height: 450px;
+    margin-left: 32px;
+    margin-right: 32px;
+    background-size: cover;
+  }
+  #vr-edukasi .bottom-image {
+    margin-top: 50px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  #vr-edukasi .left-image1 {
+    width: 270px;
+    height: 200px;
+  }
+  #vr-edukasi .left-image1 {
+    width: 270px;
+    height: 200px;
+    background-position: -20px !important;
+  }
+  #vr-edukasi .bottom-right-image {
+    margin-left: 50px;
+  }
+  #vr-edukasi .right-image1 {
+    width: 270px;
+    height: 200px;
+    background-position: -20px !important;
+  }
+  #vr-edukasi .vr-edukasi-button {
+    margin-top: 70px;
+    margin-left: 32px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #vr-edukasi .vr-edukasi-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+
+  #choose-vr-headset {
+    box-sizing: content-box;
+    border-width: 4px;
+    border-style: solid;
+
+    border-image-source: linear-gradient(
+      180deg,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0) 100%
+    );
+
+    border-image-slice: 1;
+    margin-top: 208px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: calc(100%-64px);
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 24px;
+  }
+  #choose-vr-headset .choose-vr-image {
+    width: 100%;
+    height: 500px;
+
+    margin-top: 50px;
+  }
+  .choose-vr-headset-title {
+    font-family: "Panchang-Bold";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+  }
+  .choose-vr-headset-description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 40px;
+    /* or 222% */
+
+    letter-spacing: 0.03em;
+
+    color: #9f9f9f;
+  }
+
+  #workspace {
+    margin-top: 200px;
+  }
+  #workspace .wp-image {
+    width: calc(100% - 65px);
+
+    margin-left: 32px;
+  }
+  #workspace .wp-subtitle {
+    margin-top: 30px;
+    color: #078cf0;
+    margin-left: 32px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #workspace .wp-title {
+    font-size: 24px;
+    margin-left: 32px;
+
+    margin-right: 32px;
+    margin-top: 30px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    font-family: "Panchang-Bold";
+  }
+  #workspace .wp-description {
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  #workspace .wp-button {
+    margin-top: 70px;
+    margin-left: 32px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #workspace .wp-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+  /* Top Button */
+  .keatas {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    background: #0698fb;
+    border-radius: 100%;
+    bottom: 40px;
+    right: 50px;
+  }
+  .keatas:hover {
+    text-decoration: none;
+  }
+  footer {
+    margin-top: 252px;
+    padding-top: 87px;
+  }
+  .footer-title {
+    margin-top: 100px !important;
+    margin-left: 32px;
+    margin-right: 32px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Panchang-Bold";
+    margin-bottom: 30px;
+  }
+  .footer-title span {
+    color: #0698fb;
+  }
+  .footer-description {
+    margin-top: 72px;
+    font-size: 10px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+    margin-left: 32px;
+    color: #9f9f9f;
+  }
+  footer li {
+    list-style-type: none;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 30px;
+  }
+  footer li .footer-link {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+  }
+  footer .social-media-icon {
+    margin-left: 32px;
+  }
+  footer .social-media-icon .icon-footer {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    margin-top: 20px;
+  }
+  footer .social-media-icon .icon-footer .image-icon {
+    width: 24px !important;
+    height: 24px !important;
+    margin: 8px;
+  }
+  .footer-copyright {
+    margin-top: 72px;
+    font-size: 14px;
+    margin-left: 32px;
+    margin-right: 32px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #9f9f9f;
+  }
+
+  .icon-description {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #9f9f9f;
+  }
+  .footer-copyright {
+    margin-top: 72px;
+    font-size: 10px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+    margin-left: 32px;
+    color: #9f9f9f;
+  }
+  #vr-headset {
+    margin-top: 200px;
+  }
+  #vr-headset .vr-image {
+    width: calc(100% - 65px);
+
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  #vr-headset .vr-subtitle {
+    color: #078cf0;
+    margin-left: 32px;
+    margin-top: 30px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #vr-headset .vr-title {
+    font-size: 24px;
+    margin-left: 32px;
+
+    margin-right: 32px;
+    margin-top: 30px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    font-family: "Panchang-Bold";
+  }
+  #vr-headset .vr-description {
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  #vr-headset .vr-button {
+    margin-top: 70px;
+    margin-left: 32px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #vr-headset .vr-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+}
+/* Tablet */
+@media screen and (min-width: 992px) and (max-width: 1365px) {
+  .navbar {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .navbar .navbar-brand {
+    font-family: "Panchang-Bold";
+    font-size: 24px;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    font-family: "Panchang-Regular";
+    padding-right: 25px;
+  }
+  .navbar .navbar-nav .nav-item .nav-link .translation {
+    width: 24px;
+    height: 24px;
+  }
+  .navbar .navbar-brand span {
+    color: #0698fb;
+  }
+  /* Banner */
+  #banner {
+    margin-top: 124px;
+  }
+  #banner .text-banner {
+    margin-top: 124px;
+  }
+  #banner .subtitle {
+    margin-left: 32px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  #banner .title {
+    margin-top: 30px;
+    margin-left: 32px;
+
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+  }
+  #banner .title,
+  #banner .title span {
+    line-height: 80px;
+
+    letter-spacing: 0.05em;
+  }
+  #banner .title span {
+    color: #0698fb;
+  }
+  #banner .subtitle span {
+    color: #0698fb;
+  }
+  #banner .description {
+    font-size: 18px;
+    color: #9f9f9f;
+    margin-top: 30px;
+    line-height: 40px;
+    margin-left: 32px;
+    text-align: justify;
+    letter-spacing: 0.03em;
+  }
+  #banner .button {
+    margin-top: 70px;
+    margin-left: 32px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #banner .button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240) 0%,
+      rgba(7, 140, 240) 51.67%,
+      rgba(7, 140, 240) 100%
+    );
+  }
+  .play-button {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+
+    background: rgba(7, 140, 240, 0.25);
+  }
+  .play-button:hover {
+    background: rgba(7, 140, 240, 0.15);
+  }
+  .play-button .play-image {
+    width: 50px;
+    height: 50px;
+  }
+  .video {
+    margin-top: 88px;
+    margin-left: 50px;
+  }
+  .play-video-text {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: "Panchang-Bold";
+    font-size: 16px;
+  }
+  .banner-img {
+    margin-top: 131px;
+    height: 529px;
+    margin-left: 32px;
+  }
+
+  #medis {
+    margin-top: 200px;
+  }
+  #medis .md-image {
+    width: 450px;
+    height: 550px;
+    margin-left: 32px;
+  }
+  #medis .md-subtitle {
+    color: #078cf0;
+    margin-left: 32px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #medis .md-title {
+    font-size: 24px;
+
+    margin-left: 32px;
+
+    margin-top: 30px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    font-family: "Panchang-Bold";
+  }
+  #medis .md-description {
+    font-size: 16px;
+    line-height: 40px;
+    /* or 222% */
+    margin-left: 32px;
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+    margin-left: 32px;
+  }
+  #medis .md-button {
+    margin-top: 70px;
+    margin-left: 32px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #medis .md-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+  #vr-edukasi {
+    margin-top: 200px;
+  }
+
+  #vr-edukasi .vr-edukasi-subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    margin-left: 32px;
+    color: #078cf0;
+  }
+  .vr-edukasi-title {
+    margin-left: 32px;
+    font-family: "Panchang-Bold";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #ffffff;
+  }
+  .vr-edukasi-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    margin-left: 32px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+  }
+  #vr-edukasi .top-image1 {
+    width: 350px;
+    height: 325px;
+    margin-left: 32px;
+    margin-right: 32px;
+    background-size: cover;
+  }
+  #vr-edukasi .bottom-image {
+    margin-top: 50px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  #vr-edukasi .left-image1 {
+    width: 150px;
+    height: 150px;
+  }
+
+  #vr-edukasi .bottom-right-image {
+    margin-left: 50px;
+  }
+  #vr-edukasi .right-image1 {
+    width: 150px;
+    height: 150px;
+    background-position: -20px !important;
+  }
+  #vr-edukasi .vr-edukasi-button {
+    margin-top: 70px;
+    margin-left: 32px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #vr-edukasi .vr-edukasi-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+
+  #choose-vr-headset {
+    background: #111111;
+    box-sizing: content-box;
+    border-width: 4px;
+    border-style: solid;
+
+    border-image-source: linear-gradient(
+      180deg,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0) 100%
+    );
+
+    border-image-slice: 1;
+    margin-top: 208px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: calc(100%-25px);
+    margin-right: 32px;
+    margin-left: 32px;
+  }
+  .choose-vr-image {
+    width: 250px;
+    height: 510px;
+    margin-left: 50px;
+
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .choose-vr-headset-title {
+    font-family: "Panchang-Bold";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 70px;
+    margin-left: 50px;
+
+    /* or 194% */
+    margin-top: 50px;
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+  }
+  .choose-vr-headset-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+    /* or 222% */
+    margin-left: 50px;
+    text-align: justify;
+    letter-spacing: 0.03em;
+
+    color: #9f9f9f;
+    margin-right: 50px;
+  }
+
+  #workspace {
+    margin-top: 200px;
+  }
+  #workspace .wp-image {
+    width: 400px;
+    height: 400px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  #workspace .wp-subtitle {
+    color: #078cf0;
+    margin-left: 32px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #workspace .wp-title {
+    font-size: 24px;
+
+    margin-left: 32px;
+
+    margin-right: 32px;
+    margin-top: 30px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    font-family: "Panchang-Bold";
+  }
+  #workspace .wp-description {
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  #workspace .wp-button {
+    margin-top: 70px;
+    margin-left: 32px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #workspace .wp-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+  /* Top Button */
+  .keatas {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    background: #0698fb;
+    border-radius: 100%;
+    bottom: 40px;
+    right: 50px;
+  }
+  .keatas:hover {
+    text-decoration: none;
+  }
+  footer {
+    margin-top: 252px;
+    padding-top: 87px;
+  }
+  .footer-title {
+    margin-left: 32px;
+    margin-right: 32px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Panchang-Bold";
+    margin-bottom: 30px;
+  }
+  .footer-title span {
+    color: #0698fb;
+  }
+  .footer-description {
+    margin-top: 30px;
+    margin-left: 32px;
+    font-size: 16px;
+    line-height: 40px;
+    /* or 250% */
+
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+  }
+  footer li {
+    list-style-type: none;
+    margin-left: 32px;
+    margin-bottom: 30px;
+  }
+  footer li .footer-link {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+  }
+  footer .social-media-icon {
+    margin-left: 32px;
+  }
+  footer .social-media-icon .icon-footer {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+  }
+  footer .social-media-icon .icon-footer .image-icon {
+    width: 24px !important;
+    height: 24px !important;
+    margin: 8px;
+  }
+  .footer-copyright {
+    margin-top: 72px;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+    margin-left: 180px;
+    color: #9f9f9f;
+  }
+  #vr-headset {
+    margin-top: 200px;
+  }
+  #vr-headset .vr-image {
+    width: 400px;
+    height: 350px;
+    margin-left: 32px;
+  }
+  #vr-headset .vr-subtitle {
+    color: #078cf0;
+    margin-left: 32px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #vr-headset .vr-title {
+    font-size: 30px;
+    margin-left: 32px;
+
+    margin-right: 32px;
+    margin-top: 30px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    font-family: "Panchang-Bold";
+  }
+  #vr-headset .vr-description {
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  #vr-headset .vr-button {
+    margin-top: 70px;
+    margin-left: 32px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #vr-headset .vr-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 1366px) and (max-width: 1535px) {
+  .navbar {
+    padding-top: 34px;
+    padding-bottom: 34px;
+
+    padding-left: 0;
+    padding-right: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .navbar .navbar-brand {
+    font-family: "Panchang-Bold";
+    font-size: 24px;
+  }
+
+  .navbar .navbar-brand span {
+    color: #0698fb;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    padding-right: 75px;
+    font-family: "Panchang-Regular";
+  }
+  .navbar .navbar-nav .nav-item .nav-link .translation {
+    width: 24px;
+    height: 24px;
+  }
+  /* Banner */
+  #banner {
+    margin-top: 124px;
+  }
+  #banner .text-banner {
+    margin-top: 124px;
+  }
+  #banner .subtitle {
+    margin-left: 100px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  #banner .title {
+    margin-top: 30px;
+    margin-left: 100px;
+
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+  }
+  #banner .title,
+  #banner .title span {
+    line-height: 80px;
+
+    letter-spacing: 0.05em;
+  }
+  #banner .title span {
+    color: #0698fb;
+  }
+  #banner .subtitle span {
+    color: #0698fb;
+  }
+  #banner .description {
+    font-size: 18px;
+    color: #9f9f9f;
+    margin-top: 30px;
+    line-height: 40px;
+    margin-left: 100px;
+    text-align: justify;
+    letter-spacing: 0.03em;
+  }
+  #banner .button {
+    margin-top: 70px;
+    margin-left: 100px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #banner .button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240) 0%,
+      rgba(7, 140, 240) 51.67%,
+      rgba(7, 140, 240) 100%
+    );
+  }
+  .play-button {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+
+    background: rgba(7, 140, 240, 0.25);
+  }
+  .play-button:hover {
+    background: rgba(7, 140, 240, 0.15);
+  }
+  .play-button .play-image {
+    width: 50px;
+    height: 50px;
+  }
+  .video {
+    margin-top: 88px;
+    margin-left: 50px;
+  }
+  .play-video-text {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: "Panchang-Bold";
+    font-size: 16px;
+  }
+  .banner-img {
+    margin-top: 131px;
+    height: 529px;
+    margin-left: 100px;
+  }
+
+  #medis {
+    margin-top: 200px;
+  }
+  #medis .md-image {
+    width: 530px;
+    height: 530px;
+    margin-left: 100px;
+  }
+  #medis .md-subtitle {
+    color: #078cf0;
+    margin-left: 100px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #medis .md-title {
+    font-size: 30px;
+    margin-left: 100px;
+
+    margin-right: 100px;
+    margin-top: 30px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    font-family: "Panchang-Bold";
+  }
+  #medis .md-description {
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #medis .md-button {
+    margin-top: 70px;
+    margin-left: 100px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #medis .md-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+  #vr-edukasi {
+    margin-top: 200px;
+  }
+
+  #vr-edukasi .vr-edukasi-subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    margin-left: 100px;
+    color: #078cf0;
+  }
+  .vr-edukasi-title {
+    margin-left: 100px;
+    font-family: "Panchang-Bold";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #ffffff;
+  }
+  .vr-edukasi-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    margin-left: 100px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+  }
+  #vr-edukasi .top-image1 {
+    width: 400px;
+    height: 325px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-size: cover;
+  }
+  #vr-edukasi .bottom-image {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #vr-edukasi .left-image1 {
+    width: 175px;
+    height: 200px;
+  }
+
+  #vr-edukasi .bottom-right-image {
+    margin-left: 50px;
+  }
+  #vr-edukasi .right-image1 {
+    width: 175px;
+    height: 200px;
+    background-position: -20px !important;
+  }
+  #vr-edukasi .vr-edukasi-button {
+    margin-top: 70px;
+    margin-left: 100px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #vr-edukasi .vr-edukasi-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+
+  #choose-vr-headset {
+    box-sizing: content-box;
+    border-width: 4px;
+    border-style: solid;
+
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      180deg,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0) 100%
+    );
+    background: #111111;
+
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 208px;
+  }
+  .choose-vr-image {
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-top: 50px;
+    width: 350px;
+  }
+  .choose-vr-headset-title {
+    font-family: "Panchang-Bold";
+    font-weight: 700;
+    line-height: 70px;
+    /* or 194% */
+    margin-top: 50px;
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+  }
+  .choose-vr-headset-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+
+    color: #9f9f9f;
+    margin-right: 50px;
+  }
+
+  #workspace {
+    margin-top: 200px;
+  }
+  #workspace .wp-image {
+    width: 530px;
+    height: 530px;
+    margin-left: 100px;
+  }
+  #workspace .wp-subtitle {
+    color: #078cf0;
+    margin-left: 100px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 200px;
+  }
+  #workspace .wp-title {
+    font-size: 30px;
+    margin-left: 100px;
+
+    margin-right: 100px;
+    margin-top: 30px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    font-family: "Panchang-Bold";
+  }
+  #workspace .wp-description {
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #workspace .wp-button {
+    margin-top: 70px;
+    margin-left: 100px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #workspace .wp-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+  /* Top Button */
+  .keatas {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    background: #0698fb;
+    border-radius: 100%;
+    bottom: 40px;
+    right: 50px;
+  }
+  .keatas:hover {
+    text-decoration: none;
+  }
+  footer {
+    margin-top: 252px;
+    padding-top: 87px;
+  }
+  .footer-title {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Panchang-Bold";
+    margin-bottom: 30px;
+  }
+  .footer-title span {
+    color: #0698fb;
+  }
+  .footer-description {
+    margin-top: 30px;
+    margin-left: 100px;
+    font-size: 16px;
+    line-height: 40px;
+    /* or 250% */
+
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+  }
+  footer li {
+    list-style-type: none;
+    margin-left: 100px;
+    margin-bottom: 30px;
+  }
+  footer li .footer-link {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+  }
+  footer .social-media-icon {
+    margin-left: 100px;
+  }
+  footer .social-media-icon .icon-footer {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+  }
+  footer .social-media-icon .icon-footer .image-icon {
+    width: 24px !important;
+    height: 24px !important;
+    margin: 8px;
+  }
+  .footer-copyright {
+    margin-top: 72px;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+    margin-left: 180px;
+    color: #9f9f9f;
+  }
+  #vr-headset {
+    margin-top: 200px;
+  }
+  #vr-headset .vr-image {
+    width: 530px;
+    height: 530px;
+    margin-left: 100px;
+  }
+  #vr-headset .vr-subtitle {
+    color: #078cf0;
+    margin-left: 100px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #vr-headset .vr-title {
+    font-size: 30px;
+    margin-left: 100px;
+
+    margin-right: 100px;
+    margin-top: 30px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    font-family: "Panchang-Bold";
+  }
+  #vr-headset .vr-description {
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #vr-headset .vr-button {
+    margin-top: 70px;
+    margin-left: 100px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #vr-headset .vr-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1536px) {
+  .navbar {
+    padding-top: 34px;
+    padding-bottom: 34px;
+
+    padding-left: 0;
+    padding-right: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .navbar .navbar-brand {
+    font-family: "Panchang-Bold";
+    font-size: 24px;
+  }
+
+  .navbar .navbar-brand span {
+    color: #0698fb;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    padding-right: 75px;
+    font-family: "Panchang-Regular";
+  }
+  .navbar .navbar-nav .nav-item .nav-link .translation {
+    width: 24px;
+    height: 24px;
+  }
+  /* Banner */
+  #banner {
+    margin-top: 124px;
+  }
+  #banner .text-banner {
+    margin-top: 124px;
+  }
+  #banner .subtitle {
+    margin-left: 100px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  #banner .title {
+    font-size: 56px;
+    margin-top: 30px;
+    margin-left: 100px;
+
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+  }
+  #banner .title,
+  #banner .title span {
+    line-height: 80px;
+
+    letter-spacing: 0.05em;
+  }
+  #banner .title span {
+    color: #0698fb;
+  }
+  #banner .subtitle span {
+    color: #0698fb;
+  }
+  #banner .description {
+    font-size: 18px;
+    color: #9f9f9f;
+    margin-top: 30px;
+    line-height: 40px;
+    margin-left: 100px;
+    text-align: justify;
+    letter-spacing: 0.03em;
+  }
+  #banner .button {
+    margin-top: 70px;
+    margin-left: 100px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #banner .button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240) 0%,
+      rgba(7, 140, 240) 51.67%,
+      rgba(7, 140, 240) 100%
+    );
+  }
+  .play-button {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+
+    background: rgba(7, 140, 240, 0.25);
+  }
+  .play-button:hover {
+    background: rgba(7, 140, 240, 0.15);
+  }
+  .play-button .play-image {
+    width: 50px;
+    height: 50px;
+  }
+  .video {
+    margin-top: 88px;
+    margin-left: 50px;
+  }
+  .play-video-text {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: "Panchang-Bold";
+    font-size: 16px;
+  }
+  .banner-img {
+    margin-top: 131px;
+    height: 529px;
+    margin-left: 100px;
+  }
+
+  #medis {
+    margin-top: 200px;
+  }
+  #medis .md-image {
+    width: 530px;
+    height: 530px;
+    margin-left: 100px;
+  }
+  #medis .md-subtitle {
+    color: #078cf0;
+    margin-left: 100px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #medis .md-title {
+    font-size: 30px;
+    margin-left: 100px;
+
+    margin-right: 100px;
+    margin-top: 30px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    font-family: "Panchang-Bold";
+  }
+  #medis .md-description {
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #medis .md-button {
+    margin-top: 70px;
+    margin-left: 100px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #medis .md-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+  #vr-edukasi {
+    margin-top: 200px;
+  }
+
+  #vr-edukasi .vr-edukasi-subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    margin-left: 100px;
+    color: #078cf0;
+  }
+  .vr-edukasi-title {
+    margin-left: 100px;
+    font-family: "Panchang-Bold";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #ffffff;
+  }
+  .vr-edukasi-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    margin-left: 100px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+  }
+  #vr-edukasi .vr-edukasi-button {
+    margin-top: 70px;
+    margin-left: 100px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #vr-edukasi .vr-edukasi-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+  #vr-edukasi .top-image1 {
+    margin-left: 100px;
+    width: 590px;
+    height: 325px;
+    background-size: cover;
+  }
+  #vr-edukasi .bottom-image {
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  #vr-edukasi .left-image1 {
+    width: 270px;
+    height: 200px;
+  }
+  #vr-edukasi .left-image1 {
+    width: 270px;
+    height: 200px;
+    background-position: -20px !important;
+  }
+  #vr-edukasi .bottom-right-image {
+    margin-left: 50px;
+  }
+  #vr-edukasi .right-image1 {
+    width: 270px;
+    height: 200px;
+    background-position: -20px !important;
+  }
+
+  #choose-vr-headset {
+    box-sizing: content-box;
+    border-width: 4px;
+    border-style: solid;
+
+    border-image-source: linear-gradient(
+      180deg,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0) 100%
+    );
+    background: #111111;
+
+    border-image-slice: 1;
+
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 208px;
+  }
+  .choose-vr-image {
+    width: 350px;
+    height: 510px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .choose-vr-headset-title {
+    font-family: "Panchang-Bold";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 70px;
+
+    /* or 194% */
+    margin-top: 72px;
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+  }
+  .choose-vr-headset-description {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+
+    color: #9f9f9f;
+    margin-right: 50px;
+  }
+
+  #workspace {
+    margin-top: 200px;
+  }
+  #workspace .wp-image {
+    width: 530px;
+    height: 530px;
+    margin-left: 100px;
+  }
+  #workspace .wp-subtitle {
+    margin-top: 150px;
+    color: #078cf0;
+    margin-left: 100px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #workspace .wp-title {
+    font-size: 30px;
+    margin-left: 100px;
+
+    margin-right: 100px;
+    margin-top: 30px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    font-family: "Panchang-Bold";
+  }
+  #workspace .wp-description {
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #workspace .wp-button {
+    margin-top: 70px;
+    margin-left: 100px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #workspace .wp-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+  /* Top Button */
+  .keatas {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    background: #0698fb;
+    border-radius: 100%;
+    bottom: 40px;
+    right: 50px;
+  }
+  .keatas:hover {
+    text-decoration: none;
+  }
+  footer {
+    margin-top: 252px;
+    padding-top: 87px;
+  }
+  .footer-title {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Panchang-Bold";
+    margin-bottom: 30px;
+  }
+  .footer-title span {
+    color: #0698fb;
+  }
+  .footer-description {
+    margin-top: 30px;
+    margin-left: 100px;
+    font-size: 16px;
+    line-height: 40px;
+    /* or 250% */
+
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+  }
+  footer li {
+    list-style-type: none;
+    margin-left: 100px;
+    margin-bottom: 30px;
+  }
+  footer li .footer-link {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+  }
+  footer .social-media-icon {
+    margin-left: 100px;
+  }
+  footer .social-media-icon .icon-footer {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+  }
+  footer .social-media-icon .icon-footer .image-icon {
+    width: 24px !important;
+    height: 24px !important;
+    margin: 8px;
+  }
+  .footer-copyright {
+    margin-top: 72px;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+    margin-left: 180px;
+    color: #9f9f9f;
+  }
+  #vr-headset {
+    margin-top: 200px;
+  }
+  #vr-headset .vr-image {
+    width: 530px;
+    height: 530px;
+    margin-left: 100px;
+  }
+  #vr-headset .vr-subtitle {
+    margin-top: 52px;
+    color: #078cf0;
+    margin-left: 100px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #vr-headset .vr-title {
+    font-size: 30px;
+    margin-left: 100px;
+
+    margin-right: 100px;
+    margin-top: 30px;
+    line-height: 70px;
+    /* or 194% */
+
+    letter-spacing: 0.05em;
+    font-family: "Panchang-Bold";
+  }
+  #vr-headset .vr-description {
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #9f9f9f;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #vr-headset .vr-button {
+    margin-top: 70px;
+    margin-left: 100px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+  }
+  #vr-headset .vr-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+  #highest-headset {
+    margin-top: 200px;
+  }
+  .highest-headset-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+  .highest-headset-description {
+    font-weight: 400;
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 40px;
+    margin-left: 395px;
+    margin-right: 395px;
+    /* or 222% */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #9f9f9f;
+  }
+
+  .card {
+    border-style: solid;
+    border: 30px solid;
+
+    margin-top: 75px;
+
+    border-image-source: linear-gradient(
+      180deg,
+      rgba(7, 140, 240, 0) 0%,
+      #078cf0 100%
+    );
+    color: #090909;
+
+    border-image-slice: 1;
+    box-sizing: content-box;
+    border-width: 1px;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 400px !important;
+  }
+  .device {
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    margin-bottom: 30px;
+  }
+  .display {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .display span {
+    font-weight: 700;
+  }
+  .resolution {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+  }
+  .resolution span {
+    font-weight: 700;
+  }
+  .refresh-rate {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+  }
+  .refresh-rate span {
+    font-weight: 700;
+  }
+  .field-of-view {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+  }
+  .field-of-view span {
+    font-weight: 700;
+  }
+  .weight {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+  }
+  .weight span {
+    font-weight: 700;
+  }
+  .device-button {
+    margin-top: 70px;
+    display: block;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Panchang-Bold";
+    color: white;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      #078cf0 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      #078cf0 100%
+    );
+    margin-bottom: 40px;
+  }
+  .device-button:hover {
+    text-decoration: none;
+    background: radial-gradient(
+      100% 1111.11% at 100% 50.67%,
+      rgba(7, 140, 240, 0.65) 0%,
+      rgba(7, 140, 240, 0.65) 51.67%,
+      rgba(7, 140, 240, 0.65) 100%
+    );
+  }
+}

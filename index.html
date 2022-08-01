@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="metaverse"
+      content="Metaverse adalah media sosial yang dilakukan secara virtual dengan menggunakan virtual reality dan augmanted reality"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="apps/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <title>ZILAVERS.</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-fixed-top fixed-top navbar-expand-lg navbar-dark bg-transparent"
+    >
+      <a class="navbar-brand" href="#">Zila<span>vers.</span></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="apps/pages/augmanted_reality.html"
+              >Augmanted Reality <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="apps/pages/virtual_reality.html"
+              >Virtual Reality</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="apps/pages/artificial_intelligence.html"
+              >AI</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="apps/pages/avatar_3d.html">3D Avatar</a>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-link" href="">
+              <img
+                class="translation"
+                src="apps/assets/images/World.svg"
+                alt="Translation"
+              />
+              INA
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="banner">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 text-banner">
+          <h4 class="subtitle" data-aos="fade-up">
+            SELAMAT DATANG DI ZILA<span>VERS.</span>
+          </h4>
+          <h1 class="title" data-aos="fade-up">
+            Jelajahi Dunia Virtual Melalui <span>Metaverse</span>
+          </h1>
+          <p class="description" data-aos="fade-up">
+            Dengan teknologi virtual reality dan augmanted reality (mixed
+            reality) membuatmu melihat dunia digital menjadi terasa lebih nyata.
+          </p>
+          <div class="d-flex" data-aos="fade-up">
+            <a href="#tentang" class="button"  data-aos="fade-up">Mulai Sekarang</a>
+            <div class="d-flex video">
+              <a
+                data-toggle="modal"
+                data-target="#video-metaverse-modal"
+                class="play-button"
+                id="play-button"
+                href=""
+              >
+                <img
+                  src="apps/assets/images/video-circle.svg"
+                  class="play-image"
+                  alt="Play"
+                />
+              </a>
+              <p class="play-video-text">Tonton Video</p>
+            </div>
+            <div
+              class="modal fade"
+              id="video-metaverse-modal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Pengenalan Metaverse
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe
+                      width="100%"
+                      height="315"
+                      src="https://www.youtube.com/embed/99xx89WA1ys"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-dismiss="modal"
+                    >
+                      Tutup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 img-banner">
+          <img
+            data-aos="fade-up"
+            class="d-none d-lg-block banner-img"
+            src="apps/assets/images/banner_image.svg"
+            alt="metaverse"
+            data-aos="fade-up"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang">
+      <div class="row">
+        <div class="col-lg-5">
+          <img
+            class="img-fluid left-image"
+            src="apps/assets/images/about_meta.jpeg"
+            class="left-image"
+            data-aos="fade-up"
+          />
+        </div>
+        <div class="col-lg-7">
+          <h4 class="tentang-subtitle"  data-aos="fade-up">TENTANG</h4>
+          <h1 class="tentang-title"  data-aos="fade-up">Apa itu Metaverse?</h1>
+          <p class="tentang-description"  data-aos="fade-up">
+            Pada dasarnya istilah yang berasal dari novel cyberpunk tahun 1992
+            "Snow Crash," yang menyiratkan sebuah dunia di mana orang dapat
+            berinteraksi satu sama lain dengan menggunakan avatar mereka.
+            Metaverse sebenarnya adalah virtual reality 3D yang memungkinkan
+            orang untuk berinteraksi satu sama lain. Anda dapat menganggap
+            metaverse sebagai ekosistem yang terhubung dari lingkungan virtual
+            3D online, di mana pengguna dapat berinteraksi satu sama lain,
+            membuat aset, bermain game, bekerja, dan berkolaborasi satu sama
+            lain.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="produk">
+      <h3 class="produk-subtitle"  data-aos="fade-up">TECHNOLOGY METAVERSE</h3>
+      <h1 class="produk-title"  data-aos="fade-up">Membangun Dunia Metaverse</h1>
+      <p class="produk-description"  data-aos="fade-up">
+        Teknologi yang digunakan untuk membangun dunia virtual
+      </p>
+      <div class="row" style="width: 100%">
+        <div class="col-lg-6">
+          <div class="produk-detail">
+            <div data-relative-input="true" id="scene">
+              <img
+                data-depth="0.5"
+                class="img-fluid pd-image"
+                src="apps/assets/images/virtual_reality.svg"
+                alt="metaverse"
+                data-aos="fade-up"
+              />
+            </div>
+            <h1 class="pd-title"  data-aos="fade-up">Virtual Reality</h1>
+            <p class="pd-description"  data-aos="fade-up">
+              Virtual reality merupakan sebuah teknologi yang membuat pengguna
+              dapat berinteraksi seperti halnya di dunia nyata.
+            </p>
+            <a
+              href="apps/pages/virtual_reality.html"
+              class="button"
+              alt="Virtual Reality"
+              data-aos="fade-up"
+              >Jelajahi</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="produk-detail">
+            <div data-relative-input="true" id="scene">
+              <img
+                data-depth="0.5"
+                class="img-fluid pd-image"
+                src="apps/assets/images/augmanted_reality.svg"
+                alt="metaverse"
+                data-aos="fade-up"
+              />
+            </div>
+            <h1 class="pd-title"  data-aos="fade-up">Augmanted Reality</h1>
+            <p class="pd-description"  data-aos="fade-up">
+              Augmented reality memungkinkan kamu mengekspresikan diri dengan
+              orang-orang yang paling berarti melalui foto dan video.
+            </p>
+            <a href="apps/pages/augmanted_reality.html"  data-aos="fade-up" class="button"
+              >Jelajahi</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="produk-detail">
+            <img
+              class="img-fluid pd-image"
+              src="apps/assets/images/artificial_intelligence.svg"
+              alt="metaverse"
+              data-aos="fade-up"
+            />
+            <h1 class="pd-title"  data-aos="fade-up">Artificial Intelligence</h1>
+            <p class="pd-description"  data-aos="fade-up">
+              Artificial Intelligence memiliki kemampuan untuk menganalisis
+              gambar pengguna 2D atau 3D untuk membuat avatar yang realistis.
+            </p>
+            <a href="apps/pages/artificial_intelligence.html"  data-aos="fade-up" class="button"
+              >Jelajahi</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="produk-detail">
+            <img
+              class="img-fluid pd-image"
+              src="apps/assets/images/3D_avatar.svg"
+              alt="metaverse"
+              data-aos="fade-up"
+            />
+            <h1 class="pd-title"  data-aos="fade-up">Avatar 3D</h1>
+            <p class="pd-description"  data-aos="fade-up">
+              Avatar 3D dapat disesuaikan dengan cara apa pun yang Anda pilih.
+              Mulai dari pakaian karakter dan hal lainnya.
+            </p>
+            <a href="apps/pages/avatar_3d.html"  data-aos="fade-up" class="button">Jelajahi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools">
+      <h1 class="tools-title"  data-aos="fade-up">Alat Membuat Dunia Metaverse</h1>
+      <p class="tools-description"  data-aos="fade-up">
+        Alat atau tools yang digunakan untuk membuat metaverse
+      </p>
+      <div class="swiper">
+        <div class="swiper-wrapper mb-5">
+          <div class="swiper-slide">
+            <div class="d-flex flex-column align-items-center">
+              <img
+                src="apps/assets/images/blender.png"
+                class="swiper-1"
+                alt="" 
+                
+              />
+              <h3 class="slider-title">Blender</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="d-flex flex-column align-items-center">
+              <img src="apps/assets/images/unity.png" class="swiper-1" />
+              <h3 class="slider-title">Unity</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="d-flex flex-column align-items-center">
+              <img src="apps/assets/images/unreal.png" class="swiper-1" />
+              <h3 class="slider-title">Unreal Engine</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="d-flex flex-column align-items-center">
+              <img src="apps/assets/images/nft.png" class="swiper-1" />
+              <h3 class="slider-title">Block Chain</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="swipper-button-prev">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <img src="apps/assets/images/arrow_left.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="swipper-button-next">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <img src="apps/assets/images/icon_next.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="sejarah" class="w-100">
+      <h3 class="sejarah-subtitle"  data-aos="fade-up">SEJARAH</h3>
+      <h1 class="sejarah-title"  data-aos="fade-up">Road Map Metaverse</h1>
+      <p class="sejarah-description"  data-aos="fade-up">
+        Road Map Metaverse ditujukan untuk menceritakan sejarah pembentukkan
+        metaverse
+      </p>
+      <div class="d-flex justify-content-center">
+        <img
+          src="apps/assets/images/roadmap.svg"
+          class="img-fluid roadmap-image"
+          alt="roadmap metaverse"
+          data-aos="fade-up"
+        />
+      </div>
+    </section>
+
+    <section id="galeri">
+      <div class="row">
+        <div class="col-lg-4">
+          <h3 class="galeri-subtitle"  data-aos="fade-up">GALERI</h3>
+          <h1 class="galeri-title"  data-aos="fade-up">Video Mengenai Metaverse</h1>
+          <p class="galeri-description"  data-aos="fade-up">
+            Video mengenai segala hal tentang metaverse sebagai koneksi sosial
+          </p>
+        </div>
+        <div class="col-lg-8">
+          <div class="d-lg-flex">
+            <div class="left-video">
+              <iframe
+                class="left-video1"
+                src="https://www.youtube.com/embed/PfNsf3GU7OA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen 
+                data-aos="fade-up"
+              ></iframe>
+            </div>
+            <div class="right-video d-xl-block">
+              <iframe
+                class="right-video1"
+                src="https://www.youtube.com/embed/qSxfXoz0u98"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                data-aos="fade-up"
+              ></iframe>
+              <iframe
+                class="right-video1"
+                src="https://www.youtube.com/embed/zq3K__5fFbU"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                data-aos="fade-up"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h3 class="faq-subtitle">FAQ</h3>
+      <h1 class="faq-title">Frequently Asked Questions</h1>
+      <p class="faq-description">
+        Pertanyaan yang sering diajukan mengenai metaverse adalah aset berharga
+        bagi setiap pemula untuk menghilangkan keraguan mereka.
+      </p>
+      <div class="accor">
+        <button class="accordion">Apakah Kegunaan dari Metaverse?</button>
+        <div class="panel">
+          <p class="accordion-description">
+            Orang-orang dapat berinteraksi dan bersosialisasi satu sama lain
+            melalui avatar digital di metaverse. Mereka dapat memanfaatkan
+            faktor ini untuk mengidentifikasi peluang pemasaran yang
+            menguntungkan. Metaverse juga bisa membuka peluang baru untuk
+            menciptakan ruang belajar virtual atau wisata virtual.
+          </p>
+        </div>
+      </div>
+      <div class="accor">
+        <button class="accordion">
+          Apakah ciri-ciri penting dari Metaverse?
+        </button>
+        <div class="panel">
+          <p class="accordion-description">
+            Ciri-ciri metaverse juga merupakan salah satu sorotan penting dalam
+            pertanyaan metaverse untuk pemula. Anda harus mencatat bahwa
+            metaverse adalah dunia virtual dan dapat memiliki berbagai macam
+            sifat. Namun, sifat paling penting dari multiverse termasuk
+            interaktivitas, interoperabilitas, jasmani, dan potensi ekonomi yang
+            besar. Pengguna di metaverse memiliki kemampuan untuk berkomunikasi
+            dan berinteraksi dengan pengguna lain dan ruang di metaverse. Avatar
+            dan aset yang dibuat di metaverse mudah diakses dan dioperasikan di
+            berbagai ruang di metaverse. Sifat jasmani metaverse menyiratkan
+            bahwa terlepas dari sifat virtualnya, metaverse akan mengikuti
+            paralel dengan dunia nyata. Misalnya, metaverse juga akan memiliki
+            sumber daya yang terbatas. Sifat paling penting dari metaverse
+            adalah potensi ekonomi dengan kemungkinan untuk menciptakan ekonomi
+            yang benar-benar baru dan lengkap.
+          </p>
+        </div>
+      </div>
+      <div class="accor">
+        <button class="accordion">Apa peran VR dan AR dalam metaverse?</button>
+        <div class="panel">
+          <p class="accordion-description">
+            Melalui VR, pengguna Metaverse akan dapat menyaksikan aspek visual
+            dari metaverse yang mendekati kenyataan. VR membawa pemandangan,
+            suara, dan sensasi lainnya lewat perangkat seperti kacamata dan
+            headset. Komponen VR yang paling terkenal adalah head-mounted
+            display (HMD).
+            <br />
+
+            Cara kerja perangkat ini melalui peranti khusus VR. Kemudian user
+            akan melihat suatu dunia semu yang sebenarnya merupakan
+            gambar-gambar dinamis hasil dari simulasi komputer.
+            <br />
+            Augmented Reality adalah teknologi yang menggabungkan benda-benda
+            maya. AR menjadi perantara dalam menampilkan skor pada pertandingan
+            olahraga yang ditayangkan melalui 3D, foto, pesan teks di perangkat
+            mobile. AR membutuhkan input device seperti kamera atau webcam,
+            output device monitor atau HMD agar benda maya tambahan dapat
+            berjalan secara real-time. Augmented Reality atau sering disebut AR
+            akan melengkapi VR dengan menghadirkan fitur audio dan sensorik yang
+            memungkinkan pengguna Metaverse dapat berinteraksi secara langsung.
+          </p>
+        </div>
+      </div>
+      <div class="accor">
+        <button class="accordion">Apakah metaverse itu nyata?</button>
+        <div class="panel">
+          <p class="accordion-description">
+            Metaverse adalah suatu teknologi Augmented Reality (AR) yang
+            memungkinkan individu untuk berinteraksi dengan individu lainnya
+            secara virtual. Metaverse kerap diartikan sebagai simulasi dunia
+            nyata manusia yang diimplementasikan di dunia maya atau internet.
+          </p>
+        </div>
+      </div>
+      <div class="accor">
+        <button class="accordion">Seperti apa tampilan dari metaverse?</button>
+        <div class="panel">
+          <p class="accordion-description">
+            Penambahan umum berikutnya di antara pertanyaan umum tentang
+            metaverse untuk pemula akan merujuk pada penampilan metaverse di
+            tahun-tahun mendatang. Karena Facebook telah terjun langsung dalam
+            mengembangkan metaverse-nya, banyak perusahaan lain akan bergabung.
+            Jadi, orang akan mengharapkan platform metaverse yang berbeda yang
+            didedikasikan untuk setiap perusahaan. Namun, metaverse akan
+            terbentuk di masa depan dengan perusahaan yang berbeda membawa
+            metaverse masing-masing ke dalam satu dunia virtual. Jawaban paling
+            sederhana untuk bagaimana metaverse akan terlihat di masa depan akan
+            menunjuk ke versi 3D dari internet. Bayangkan berjalan di
+            jalan-jalan Paris hanya dengan mencari "tempat wisata Paris." Dengan
+            kacamata VR atau AR Anda, Anda benar-benar dapat merasakan
+            pengalaman nyata berinteraksi dengan informasi yang Anda inginkan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="col-lg-4">
+          <h1 class="footer-title">Zila<span>vers.</span></h1>
+          <p class="footer-description">
+            Website yang membantumu mengenal lebih dalam tentang teknologi dunia
+            metaverse.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <h1 class="footer-title">Technology</h1>
+          <li>
+            <a href="apps/pages/virtual_reality.html" class="footer-link"
+              >Virtual Reality</a
+            >
+          </li>
+          <li>
+            <a href="apps/pages/augmanted_reality.html" class="footer-link"
+              >Augmanted Reality</a
+            >
+          </li>
+          <li>
+            <a
+              href="apps/pages/artificial_intelligence.html"
+              class="footer-link"
+              >Artificial Intelligence</a
+            >
+          </li>
+          <li>
+            <a href="apps/pages/avatar_3d.html" class="footer-link"
+              >3D Avatar</a
+            >
+          </li>
+        </div>
+        <div class="col-lg-4">
+          <h1 class="footer-title">Asset</h1>
+          <li>
+            <a
+              href="https://www.flaticon.com/packs/metaverse-43?word=metaverse"
+              class="footer-link"
+              >Icon Metaverse</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://sketchfab.com/3d-models/medieval-fantasy-book-06d5a80a04fc4c5ab552759e9a97d91a"
+              class="footer-link"
+              >Augmanted Reality</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.analyticsinsight.net/why-ai-counts-as-the-biggest-factor-behind-metaverse-growth/#:~:text=The%20Metaverse%20AI%20has%20become,for%20this%20new%20digital%20world."
+              class="footer-link"
+              >Insight AI</a
+            >
+          </li>
+          <li>
+            <a href="https://readyplayer.me/" class="footer-link"
+              >AI 3D AVATAR</a
+            >
+          </li>
+        </div>
+        <div class="col-lg-4 col-xl-3">
+          <h1 class="footer-title">Ikuti Kami</h1>
+          <div class="d-lg-flex social-media-icon">
+            <div class="icon-footer d-flex d-lg-block">
+              <a
+                href="https://www.youtube.com/channel/UCCEr8He96NhAxVe_YL32Rww"
+              >
+                <img
+                  class="image-icon"
+                  src="apps/assets/images/facebook.svg"
+                  alt="facebook telkom university"
+                />
+              </a>
+              <p class="d-lg-none icon-description">Facebook</p>
+            </div>
+            <div class="icon-footer d-flex d-lg-block">
+              <a href="https://www.instagram.com/telkomuniversity/">
+                <img
+                  class="image-icon"
+                  src="apps/assets/images/instagram.svg"
+                  alt="instagram telkom university"
+                />
+              </a>
+              <p class="d-lg-none icon-description">Instagram</p>
+            </div>
+            <div class="icon-footer d-flex d-lg-block">
+              <a href="https://twitter.com/TelUniversity">
+                <img
+                  class="image-icon"
+                  src="apps/assets/images/twitter.svg"
+                  alt=""
+                />
+              </a>
+
+              <p class="d-lg-none icon-description">Twitter</p>
+            </div>
+            <div class="icon-footer d-flex d-lg-block">
+              <a
+                href="https://www.youtube.com/channel/UCCEr8He96NhAxVe_YL32Rww"
+              >
+                <img
+                  class="image-icon"
+                  src="apps/assets/images/youtube.svg"
+                  alt=""
+                />
+              </a>
+
+              <p class="d-lg-none icon-description">Youtube</p>
+            </div>
+            <div class="icon-footer d-flex d-lg-block">
+              <a href="https://www.linkedin.com/school/telkom-university/">
+                <img
+                  class="image-icon"
+                  src="apps/assets/images/linkedin.svg"
+                  alt=""
+                />
+              </a>
+              <p class="d-lg-none icon-description">Linkedin</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-xl-8">
+          <p class="footer-copyright">
+            Copyright © 2022 Zilavers. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- To the top of pages -->
+    <a href="#" class="keatas">
+      <div class="d-flex justify-content-center h-100 align-items-center">
+        <img src="apps/assets/images/accor_up.svg" alt="" />
+      </div>
+    </a>
+    <!-- end -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+    <script src="apps/javascript/aos.js"></script>
+    <script src="apps/javascript/script.js"></script>
+  </body>
+</html>
